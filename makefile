@@ -15,6 +15,8 @@ CXX ?= g++
 CL = $(CC)
 #DEBUG=-DDEBUG -g
 
+INSTALL_PATH = $(PWD)/build
+
 PREFIX ?= /usr/local
 DIRBIN ?= $(PREFIX)/bin
 DIRINC ?= $(PREFIX)/include
