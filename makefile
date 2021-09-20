@@ -148,3 +148,11 @@ clean:
 	@find . -type f -name "icbench" -delete -or -name "idxqry" -delete -or -name "idxseg" -delete -or -name "idxcr" -delete -or -name "icapp" -delete
 endif
 
+
+
+install: libic.a
+	mkdir -p $(INSTALL_PATH)/lib
+	mkdir -p $(INSTALL_PATH)/include
+	cp ./libic.a $(INSTALL_PATH)/lib/
+	cp ./*.h   $(INSTALL_PATH)/include/
+	
